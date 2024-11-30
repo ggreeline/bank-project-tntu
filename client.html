@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Panel</title>
+    <link rel="stylesheet" href="Ustyle.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>User Panel - View and Register Your Operations</h2>
+
+    <!-- Форма для реєстрації -->
+    <div class="registration-form">
+        <h3>Register New Operation</h3>
+        <form id="registration-form" onsubmit="registerUser(event)">
+            <input type="text" id="name-user" placeholder="Enter your name" required>
+            <input type="text" id="phone-user" placeholder="Enter your phone number" required>
+            <select id="operation-select" required>
+                <option value="" disabled selected>Select operation</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <!-- Поля для фільтрації користувача -->
+    <div class="filter-container">
+        <input type="text" id="name-filter-user" placeholder="Enter your name" oninput="searchUserRecords()">
+        <input type="text" id="phone-filter-user" placeholder="Enter your phone number" oninput="searchUserRecords()">
+    </div>
+
+    <!-- Таблиця для користувача -->
+    <div id="user-result">
+        <!-- Тут буде відображатися таблиця користувача -->
+    </div>
+</div>
+
+<script src="user.js"></script>
+
+</body>
+</html>

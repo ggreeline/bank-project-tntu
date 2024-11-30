@@ -1,0 +1,88 @@
+/* Загальні стилі для всієї сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Стилі для випадаючого списку */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+}
+
+select:invalid {
+    color: #aaa;
+}
+
+select option {
+    color: black;
+}
+
+/* Стилі для таблиці */
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#user-result {
+    margin-top: 20px;
+}
+
+#user-result table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#user-result th, #user-result td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}

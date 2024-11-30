@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="Astyle.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Admin Panel - View All Operations</h2>
+
+    <div class="filter-container">
+        <input type="text" id="name-filter-admin" placeholder="Filter by name" oninput="searchAdminRecords()">
+        <input type="text" id="phone-filter-admin" placeholder="Filter by phone number" oninput="searchAdminRecords()">
+        <input type="text" id="operation-filter" placeholder="Filter by operation" oninput="searchAdminRecords()">
+        <select id="end-task-filter" onchange="searchAdminRecords()">
+            <option value="">Filter by End Task</option>
+            <option value="true">Completed</option>
+            <option value="false">Not Completed</option>
+        </select>
+    </div>
+
+    <div id="admin-result">
+        </div>
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
