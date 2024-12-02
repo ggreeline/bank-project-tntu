@@ -1,0 +1,39 @@
+.panel-wrapper {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 120px;
+}
+.record.processing {
+  background-color: #a6c9e0;
+}
+.record {
+  width: 150px;
+  height: 150px;
+  background-color: #46b7f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 8px;
+  gap: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+.clock {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-weight: bold;
+}

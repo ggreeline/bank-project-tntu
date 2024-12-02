@@ -1,0 +1,21 @@
+.tables {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.table {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr auto;
+  padding: 4px;
+  background-color: #6da7e9;
+  border-radius: 6px;
+  color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+}
+.number {
+  font-size: 20px;
+  font-weight: bold;
+}
